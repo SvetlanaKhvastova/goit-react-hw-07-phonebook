@@ -1,19 +1,19 @@
 //Redux Tookit
 import { createAction } from '@reduxjs/toolkit';
 
-const fetchContactsRequest = createAction('todos/fetchContactsRequest');
-const fetchContactsSuccess = createAction('todos/fetchContactsSuccess');
-const fetchContactsError = createAction('todos/fetchContactsError');
+const fetchContactsRequest = createAction('contacts/fetchContactsRequest');
+const fetchContactsSuccess = createAction('contacts/fetchContactsSuccess');
+const fetchContactsError = createAction('contacts/fetchContactsError');
 
-const addContactsRequest = createAction('todos/addContactsRequest');
-const addContactsSuccess = createAction('todos/addContactsSuccess');
-const addContactsError = createAction('todos/addContactsError');
+const addContactsRequest = createAction('contacts/addContactsRequest');
+const addContactsSuccess = createAction('contacts/addContactsSuccess');
+const addContactsError = createAction('contacts/addContactsError');
 
-const deleteContactsRequest = createAction('todos/deleteContactsRequest');
-const deleteContactsSuccess = createAction('todos/deleteContactsSuccess');
-const deleteContactsError = createAction('todos/deleteContactsError');
+const deleteContactsRequest = createAction('contacts/deleteContactsRequest');
+const deleteContactsSuccess = createAction('contacts/deleteContactsSuccess');
+const deleteContactsError = createAction('contacts/deleteContactsError');
 
-const filterContacts = createAction('todos/changeFilter');
+const filterContacts = createAction('contacts/changeFilter');
 
 export {
   fetchContactsRequest,

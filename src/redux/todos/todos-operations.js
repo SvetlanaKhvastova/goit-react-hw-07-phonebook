@@ -17,7 +17,7 @@ const fetchContacts = () => async dispatch => {
   dispatch(fetchContactsRequest());
 
   try {
-    const { data } = await axios.get('/todos');
+    const { data } = await axios.get('/contacts');
     dispatch(fetchContactsSuccess(data));
   } catch (error) {
     dispatch(fetchContactsError(error));
@@ -34,7 +34,7 @@ const addContacts = (name, number) => dispatch => {
   dispatch(addContactsRequest());
 
   axios
-    .post('/todos', contact)
+    .post('/contacts', contact)
     .then(({ data }) => dispatch(addContactsSuccess(data)))
     .catch(error => dispatch(addContactsError(error)));
 };
@@ -43,7 +43,7 @@ const deleteContacts = id => dispatch => {
   dispatch(deleteContactsRequest());
 
   axios
-    .delete(`/todos/${id}`)
+    .delete(`/contacts/${id}`)
     .then(() => dispatch(deleteContactsSuccess(id)))
     .catch(error => dispatch(deleteContactsError(error)));
 };
