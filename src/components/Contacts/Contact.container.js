@@ -9,7 +9,7 @@ Contacts.protoTypes = {
 
 const mapStateToprops = state => ({
   isLoading: contactsSelectors.getLoading(state),
-  contactsSearch: contactsSelectors.getAllcontacts(state),
+  contactsSearch: contactsSelectors.getVisibleContacts(state),
 });
 
 const mapDispatchToProps = dispatch => ({

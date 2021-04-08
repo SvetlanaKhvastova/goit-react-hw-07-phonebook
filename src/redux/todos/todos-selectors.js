@@ -9,9 +9,9 @@ const getVisibleContacts = createSelector(
   (contacts, filterSearch) => {
     const normalizedFilter = filterSearch.toLowerCase();
 
-    return contacts.filter(contact =>
-      contact.name.toLowerCase().include(normalizedFilter),
-    );
+    return contacts.filter(contact => {
+      return contact.name.toLowerCase().include(normalizedFilter);
+    });
   },
 );
 
