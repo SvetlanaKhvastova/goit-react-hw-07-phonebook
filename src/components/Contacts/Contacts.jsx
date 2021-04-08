@@ -13,7 +13,7 @@ class Contacts extends Component {
 
   render() {
     const { contactsSearch, deleteContacts, isLoading } = this.props;
-    console.log(contactsSearch);
+    // console.log(contactsSearch);
 
     return (
       <ul className={s.contactsBlock}>
