@@ -8,12 +8,10 @@ class Contacts extends Component {
 
   componentDidMount() {
     this.props.fetchContacts();
-    console.log('HI');
   }
 
   render() {
     const { contactsSearch, deleteContacts, isLoading } = this.props;
-    // console.log(contactsSearch);
 
     return (
       <ul className={s.contactsBlock}>

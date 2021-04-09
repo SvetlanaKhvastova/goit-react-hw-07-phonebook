@@ -9,7 +9,7 @@ Filter.protoTypes = {
 };
 
 const mapStateToProps = state => ({
-  filterSearch: contactsSelectors.getFilterContacts(state),
+  filterSearch: contactsSelectors.getVisibleContacts(state),
 });
 
 const mapDispatchToProps = dispatch => ({

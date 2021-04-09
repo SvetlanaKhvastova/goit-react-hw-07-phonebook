@@ -8,7 +8,7 @@ ContactForm.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  contactsForm: contactsSelectors.getVisibleContacts(state),
+  contactsForm: contactsSelectors.getAllcontacts(state),
 });
 
 const mapDispatchToProps = dispatch => ({
