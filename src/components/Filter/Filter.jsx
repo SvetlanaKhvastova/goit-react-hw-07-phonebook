@@ -7,6 +7,7 @@ class Filter extends Component {
   handlerFilterSearch = e => {
     const { value } = e.currentTarget;
     const { filterContacts } = this.props;
+    // console.log(value);
 
     filterContacts(value);
   };
