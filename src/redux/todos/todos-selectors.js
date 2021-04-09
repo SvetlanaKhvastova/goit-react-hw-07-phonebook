@@ -7,10 +7,11 @@ const getFilterContacts = state => state.contacts.filter;
 const getVisibleContacts = createSelector(
   [getAllcontacts, getFilterContacts],
   (contacts, filterSearch) => {
+    console.log(contacts);
     const normalizedFilter = filterSearch.toLowerCase();
 
     return contacts.filter(contact => {
-      return contact.name.toLowerCase().include(normalizedFilter);
+      return contact.name.toLowerCase().includes(normalizedFilter);
     });
   },
 );
